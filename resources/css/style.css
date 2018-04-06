@@ -2,6 +2,14 @@
 
   margin: o;
 
+
+}
+
+a {
+
+  text-decoration: none;
+  color: white;
+
 }
 
 html {
@@ -17,7 +25,6 @@ html {
 
   width: 960px;
   height: auto;
-  display: inline-block;
 
 }
 
@@ -27,11 +34,18 @@ html {
 
   width: 100%;
   height: auto;
-  display: inline-flex;
   background-color: black;
   justify-content: flex-start;
   align-items: center;
   padding: 0.66rem 0.5rem;
+
+}
+
+.logo .container {
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
 
 }
 
@@ -55,7 +69,6 @@ html {
 
 .main {
 
-  display: inline-flex;
   width: 100%;
   height: 25rem;
   background-image: url('../images/moto.jpeg');
@@ -63,20 +76,24 @@ html {
     background-position: center;
     background-size: cover;
 
-
 }
 
-
-.header-text {
+.main .container {
 
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-top: 9rem;
+
+
+}
+
+.header-text {
+
   width: 20rem;
   padding: 2rem 3rem;
   background-color: black;
-  margin-top: 9rem;
 
 }
 
@@ -102,11 +119,47 @@ html {
 
 /* navigation */
 
+
 nav {
 
+  display: inline-flex;
   background-color: firebrick;
   width: 100%;
-  height: auto;
+  height: 2rem;
   padding: 0.75rem 0rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+nav .container {
+
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+
+}
+
+
+.small {
+
+    display: none;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+  }
+
+
+@media only screen and (max-width: 600px) {
+
+  nav .container {
+
+      display: none;
+  }
+
+.small {
+
+    display: inline-flex;
+
+  }
 
 }
