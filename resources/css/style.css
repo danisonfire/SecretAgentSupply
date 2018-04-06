@@ -141,12 +141,6 @@ nav .container {
 }
 
 
-.small {
-
-    display: none;
-    justify-content: space-between;
-    margin-left: 0.5rem;
-  }
 
 
 @media only screen and (max-width: 600px) {
@@ -156,10 +150,95 @@ nav .container {
       display: none;
   }
 
-.small {
+}
 
-    display: inline-flex;
+/* product section */
+
+.product-section {
+
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.product-section .container {
+
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+
+.product {
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  border: 4px solid black;
+
+}
+
+.glasses {
+
+
+  width: 100%;
+
+}
+
+.pen {
+
+  border: 4px solid black;
+  width: 100%;
+
+}
+
+.watch {
+
+  border: 4px solid black;
+  width: 100%;
+
+}
+
+.product p {
+
+  color: white;
+  padding: 0.5rem 0;
+  background-color: black;
+  width: 100%;
+
+}
+
+.product img {
+
+  height: 9rem;
+  width: auto;
+  padding: 2rem 0rem;
+
+}
+
+.glasses img {
+
+  width: 9rem;
+  height: auto;
+  padding-top: 4.5rem;
+
+}
+
+@media only screen and (max-width: 600px){
+
+.glasses {
+
+    display: none;
 
   }
+
+
 
 }
