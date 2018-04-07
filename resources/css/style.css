@@ -141,12 +141,9 @@ nav .container {
 }
 
 
-
-
 @media only screen and (max-width: 600px) {
 
   nav .container {
-
       display: none;
   }
 
@@ -177,33 +174,38 @@ nav .container {
 .product {
 
   display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   width: 30%;
-  border: 4px solid black;
+  height: auto;
 
 }
 
 .glasses {
 
-
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
+  border: 4px solid black;
 
 }
 
 .pen {
-
-  border: 4px solid black;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-
+  border: 4px solid black;
 }
 
 .watch {
-
-  border: 4px solid black;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-
+  border: 4px solid black;
 }
 
 .product p {
@@ -218,7 +220,6 @@ nav .container {
 .product img {
 
   height: 9rem;
-  width: auto;
   padding: 2rem 0rem;
 
 }
@@ -231,9 +232,37 @@ nav .container {
 
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
 
-.glasses {
+  .container {
+
+    width: 100%;
+    height: auto;
+
+  }
+
+
+  .product-section .container {
+
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+
+  .product {
+
+    display: inline-flex;
+    align-items: flex-end;
+    width: 47%;
+    height: 15rem;
+
+  }
+
+
+  .product .glasses {
 
     display: none;
 
