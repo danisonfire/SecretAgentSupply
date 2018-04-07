@@ -156,6 +156,32 @@ nav span {
 
 }
 
+@media only screen and (max-width: 470px) {
+
+    .header-text h1 {
+
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: left;
+      color: white;
+
+    }
+
+    .header-text h3 {
+
+      font-size: 0.77rem;
+      font-weight: bold;
+      text-align: left;
+      color: white;
+      margin-bottom: 0.25rem;
+
+
+    }
+
+
+
+  }
+
 /* product section */
 
 .product-section {
@@ -174,6 +200,7 @@ nav span {
   display: inline-flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
 
 
 }
@@ -252,7 +279,8 @@ nav span {
   .product-section .container {
 
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
 
   }
@@ -273,6 +301,36 @@ nav span {
     display: none;
 
   }
+
+}
+
+
+@media only screen and (max-width: 470px) {
+
+  .product {
+
+    display: inline-flex;
+    align-items: flex-end;
+    width: 90%;
+    height: 15rem;
+
+  }
+
+  .product-section .container {
+
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+
+  }
+
+  .product .watch {
+
+    display: none;
+
+  }
+
 
 }
 
@@ -316,6 +374,29 @@ nav span {
 .info p {
 
   text-align: left;
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .location-hours .container {
+
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+  }
+
+  .info {
+
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    width: 90%;
+
+  }
+
 
 }
 
