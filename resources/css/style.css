@@ -136,7 +136,15 @@ nav .container {
 
   display: inline-flex;
   justify-content: space-between;
-  margin-left: 0.5rem;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+nav span {
+
+  width: 100%;
 
 }
 
@@ -157,8 +165,6 @@ nav .container {
   height: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  align-items: center;
-  justify-content: center;
 
 }
 
@@ -166,7 +172,7 @@ nav .container {
 
   display: inline-flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row;
 
 
 }
@@ -245,9 +251,8 @@ nav .container {
   .product-section .container {
 
     display: inline-flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
 
   }
 
@@ -268,6 +273,44 @@ nav .container {
 
   }
 
+}
 
+/* location and hours */
+
+.location-hours {
+
+  width: 100%;
+  height: auto;
+
+}
+
+.location-hours .container {
+
+  display: inline-flex;
+  justify-content: space-between;
+
+
+}
+
+.info {
+
+  display: inline-flex;
+  flex-direction: column;
+  width: 35%;
+
+}
+
+.black {
+
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 1rem 0rem 1rem 2rem;
+
+}
+
+.info p {
+
+  text-align: left;
 
 }
